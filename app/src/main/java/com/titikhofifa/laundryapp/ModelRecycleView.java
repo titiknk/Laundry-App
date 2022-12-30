@@ -55,7 +55,7 @@ public class ModelRecycleView extends RecyclerView.Adapter<ModelRecycleView.View
             @Override
             public void onClick(View view) {
 
-                Toast.makeText(context,"Click"+position,Toast.LENGTH_SHORT).show();
+                Toast.makeText(context,"Lihat Detail Laundry",Toast.LENGTH_SHORT).show();
 
                 Intent intent = new Intent(context, Detail.class);
                 intent.putExtra("Logo", arrayList.get(position).getImage());
