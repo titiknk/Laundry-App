@@ -24,19 +24,11 @@
         app:layout_constraintTop_toTopOf="parent">
     </TextView>
 
-    <androidx.appcompat.widget.SearchView
-        android:id="@+id/searchview"
-        android:layout_width="361dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:background="@drawable/search_view_bg"
-        app:queryHint="Cari kebutuhanmu disini"
-        app:iconifiedByDefault="false"/>
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycleview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:listitem="@layout/list_item" />
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/card_view" />
+
 
 </LinearLayout>

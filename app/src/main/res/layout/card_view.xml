@@ -5,6 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardCornerRadius="6dp"
     app:cardElevation="3dp"
+    android:id="@+id/cardView"
     app:cardUseCompatPadding="true">
 
     <LinearLayout
@@ -14,20 +15,34 @@
         android:padding="8dp">
 
         <ImageView
-            android:id="@+id/logo_l1"
+            android:id="@+id/logoLondry"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_margin="5dp"
             android:src="@drawable/ic_launcher_background" />
 
-        <TextView
-            android:id="@+id/nama_l1"
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:paddingLeft="10dp"
-            android:text="Washy Washy One Stop Professional Laundry Pandaan"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp">
+
+            <TextView
+                android:id="@+id/namaLondry"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:text="Washy Washy One Stop Professional Laundry Pandaan"
+                android:textSize="20sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+
+        </LinearLayout>
+
+
+
 
     </LinearLayout>
 

@@ -17,12 +17,11 @@
         android:theme="@style/Theme.LaundryApp"
         tools:targetApi="31">
         <activity
-            android:name=".detail_laundry"
-            android:parentActivityName=".MainActivity"
+            android:name=".Detail"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
-                android:value=".MainActivity" />
+                android:value="" />
         </activity>
         <activity
             android:name=".ActivitySplash"
