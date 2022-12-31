@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.activity.OnBackPressedCallback;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Detail extends AppCompatActivity {
@@ -28,7 +29,15 @@ public class Detail extends AppCompatActivity {
         img.setImageResource(image);
         judulText.setText(judul);
 
+        getSupportActionBar().setTitle("Detail Laundry");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
+    }
+
+    @Override
+    public boolean onSupportNavigateUp(){
+        finish();
+        return true;
     }
 }
