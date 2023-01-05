@@ -88,57 +88,47 @@
         app:layout_constraintVertical_bias="0.967"
         app:srcCompat="@drawable/maps" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="34dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/detailText2"
-        app:srcCompat="@drawable/bg_price" />
-
     <TextView
         android:id="@+id/detailText3"
+        style="@style/TEXT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginTop="4dp"
         android:text="Cuci Setrika - Rp. 6.000 / kg"
-        style="@style/TEXT"
         android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/detailText2" />
 
     <TextView
         android:id="@+id/detailText4"
+        style="@style/TEXT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:text="Setrika - Rp. 3.000 / kg"
-        style="@style/TEXT"
         android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/detailText3" />
 
     <TextView
         android:id="@+id/detailText5"
+        style="@style/TEXT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:text="Cuci Basah - Rp. 3.000 / kg"
-        style="@style/TEXT"
         android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/detailText4" />
 
     <TextView
         android:id="@+id/detailText6"
+        style="@style/TEXT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:text="Cuci Kering - Rp. 4.000 / kg"
-        style="@style/TEXT"
         android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/detailText5" />
@@ -148,7 +138,7 @@
         android:layout_width="28dp"
         android:layout_height="26dp"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="48dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:srcCompat="@drawable/bg_jam" />
@@ -232,5 +222,15 @@
         android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@+id/imageView4"
         app:layout_constraintTop_toBottomOf="@+id/watext" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="37dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailText2"
+        app:srcCompat="@drawable/bg_price2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
