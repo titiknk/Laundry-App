@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
+    style="@style/SCREEN"
     tools:context=".MainActivity">
 
     <TextView
@@ -16,9 +17,9 @@
         android:clickable="true"
         android:text="List LAUNDRY"
         android:layout_gravity="center"
-        android:textColor="@color/black"
         android:textSize="22sp"
         android:textStyle="bold"
+        style="@style/TEXT"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

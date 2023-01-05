@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    style="@style/SCREEN"
     tools:context=".Detail">
 
     <ImageView
@@ -23,8 +24,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Washy Washy One Stop Professional Laundry Pandaan"
-        android:textColor="@color/black"
         android:textStyle="bold"
+        style="@style/TEXT"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,8 +39,8 @@
         android:id="@+id/detailText"
         android:layout_width="362dp"
         android:layout_height="116dp"
+        style="@style/TEXT"
         android:text="Jasa Laundry adalah bantuan untuk mencuci pakaian kotor sampai kering dan siap untuk digunakan, seperti pada pakaian yang awalnya dibawa ke jasa laundry dalam keadaan kotor dan ketika dikembalikan kepada pelanggan pakaian tersebut layak untuk digunakan kembali dengan kondisi bersih, wangi, rapi dan sudah disetrika. Dimana penentuan tarifnya adalah tergantung pada jenis jasa laundry, jumlah kilogram dan jumlah satuan pakaian yang akan di laundry."
-        android:textColor="@color/black"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,7 +55,6 @@
         android:layout_height="28dp"
         android:layout_marginTop="8dp"
         android:text="Layanan Binatu. Cuci Setrika, Setrika, Cuci Basah, Cuci Kering"
-        android:textColor="@color/black"
         android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -105,7 +105,7 @@
         android:layout_marginStart="4dp"
         android:layout_marginTop="4dp"
         android:text="Cuci Setrika - Rp. 6.000 / kg"
-        android:textColor="@color/black"
+        style="@style/TEXT"
         android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/detailText2" />
@@ -116,7 +116,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:text="Setrika - Rp. 3.000 / kg"
-        android:textColor="@color/black"
+        style="@style/TEXT"
         android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/detailText3" />
@@ -127,7 +127,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:text="Cuci Basah - Rp. 3.000 / kg"
-        android:textColor="@color/black"
+        style="@style/TEXT"
         android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/detailText4" />
@@ -138,7 +138,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:text="Cuci Kering - Rp. 4.000 / kg"
-        android:textColor="@color/black"
+        style="@style/TEXT"
         android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/detailText5" />
@@ -160,7 +160,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="12dp"
         android:text="Senin - Sabtu"
-        android:textColor="@color/black"
+        style="@style/TEXT"
         android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toBottomOf="@+id/detailText6" />
@@ -171,7 +171,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="Jam 08.00 - 16.00 WIB"
-        android:textColor="@color/black"
+        style="@style/TEXT"
         android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toBottomOf="@+id/detailText7" />
@@ -184,7 +184,7 @@
         android:layout_marginTop="4dp"
         android:text="Minggu Tutup"
         android:textStyle="bold"
-        android:textColor="@color/black"
+        style="@style/TEXT"
         android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toBottomOf="@+id/detailText8" />
@@ -206,7 +206,7 @@
         android:layout_marginStart="4dp"
         android:layout_marginTop="20dp"
         android:text="+6285850220309"
-        android:textColor="@color/black"
+        style="@style/TEXT"
         android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/detailText9" />
@@ -228,7 +228,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:text="Laundrypandaan.com"
-        android:textColor="@color/black"
+        style="@style/TEXT"
         android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@+id/imageView4"
         app:layout_constraintTop_toBottomOf="@+id/watext" />

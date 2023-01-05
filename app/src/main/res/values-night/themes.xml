@@ -13,4 +13,16 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <!-- Text bg night mode -->
+    <style name="TEXT">
+        <item name="android:textColor">#FFFFFF </item>
+        <item name="android:text">#FFFFFF</item>
+    </style>
+    <!-- Text Background night mode -->
+    <style name="SCREEN">
+        <item name="android:background">#232323 </item>
+    </style>
+
+
 </resources>
