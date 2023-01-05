@@ -142,7 +142,7 @@
         android:layout_marginTop="48dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:srcCompat="@drawable/bg_jam" />
+        app:srcCompat="@drawable/bg_jammm" />
 
     <TextView
         android:id="@+id/detailText7"
@@ -210,7 +210,7 @@
         android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:srcCompat="@drawable/bg_ig" />
+        app:srcCompat="@drawable/bg_insta" />
 
     <TextView
         android:id="@+id/igtext"
