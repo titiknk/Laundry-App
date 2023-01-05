@@ -40,6 +40,16 @@ public class MainActivity extends AppCompatActivity {
         arrayList.add(new Model(R.drawable.bg_sari,"Sari Laundry"));
         arrayList.add(new Model(R.drawable.bg_panji,"Panji Laundry"));
         arrayList.add(new Model(R.drawable.bg_lingga,"Lingga Laundry"));
+        arrayList.add(new Model(R.drawable.bg_orange,"Orange Laundry"));
+        arrayList.add(new Model(R.drawable.bg_purple,"Purple Laundry"));
+        arrayList.add(new Model(R.drawable.bg_imel,"IMEL Laundry"));
+        arrayList.add(new Model(R.drawable.bg_mamamia,"Mamamia Laundry"));
+        arrayList.add(new Model(R.drawable.bg_nandyto,"Nandyto Laundry"));
+        arrayList.add(new Model(R.drawable.bg_indri,"Indri Laundry"));
+        arrayList.add(new Model(R.drawable.bg_qisya,"Qisya Laundry"));
+        arrayList.add(new Model(R.drawable.bg_pink,"Pink Laundry"));
+        arrayList.add(new Model(R.drawable.bg_naela,"Naela Laundry"));
+        arrayList.add(new Model(R.drawable.bg_alvi,"ALVI Laundry"));
 
 
 
