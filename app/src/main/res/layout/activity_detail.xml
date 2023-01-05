@@ -42,6 +42,7 @@
         style="@style/TEXT"
         android:text="Jasa Laundry adalah bantuan untuk mencuci pakaian kotor sampai kering dan siap untuk digunakan, seperti pada pakaian yang awalnya dibawa ke jasa laundry dalam keadaan kotor dan ketika dikembalikan kepada pelanggan pakaian tersebut layak untuk digunakan kembali dengan kondisi bersih, wangi, rapi dan sudah disetrika. Dimana penentuan tarifnya adalah tergantung pada jenis jasa laundry, jumlah kilogram dan jumlah satuan pakaian yang akan di laundry."
         android:textSize="12sp"
+        android:justificationMode="inter_word"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.653"
