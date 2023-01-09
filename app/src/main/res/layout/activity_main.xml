@@ -13,9 +13,9 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="3dp"
+        android:layout_marginTop="2dp"
         android:clickable="true"
-        android:text="List LAUNDRY"
+        android:text="LIST LAUNDRY"
         android:layout_gravity="center"
         android:textSize="22sp"
         android:textStyle="bold"
@@ -28,6 +28,7 @@
         android:id="@+id/recycleview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
         tools:listitem="@layout/card_view" />
 
 
