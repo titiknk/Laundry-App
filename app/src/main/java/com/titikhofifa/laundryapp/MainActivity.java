@@ -11,6 +11,7 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
+    ModelRecycleView modelRecycleView;
     ArrayList<Model> arrayList = new ArrayList<>();
 
     @Override
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         recyclerView = findViewById(R.id.recycleview);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
 
         arrayList.add(new Model(R.drawable.washy_laundry,"Washy Washy One Stop Professional Laundry Pandaan"));
         arrayList.add(new Model(R.drawable.bg_cuci,"Cuci Express"));
@@ -60,9 +62,35 @@ public class MainActivity extends AppCompatActivity {
         arrayList.add(new Model(R.drawable.bg_fidi,"FIDI Laundry"));
         arrayList.add(new Model(R.drawable.bg_birawidha,"Birawidha Laundry"));
         arrayList.add(new Model(R.drawable.bg_rcl,"Rumah Cuci Laundry"));
-
-
-
+        arrayList.add(new Model(R.drawable.bg_lail,"Lail Laundry"));
+        arrayList.add(new Model(R.drawable.bg_omah,"Omah Laundry"));
+        arrayList.add(new Model(R.drawable.bg_dj,"DJ Laundry"));
+        arrayList.add(new Model(R.drawable.bg_dn,"DN Laundry"));
+        arrayList.add(new Model(R.drawable.bg_afi,"Afi Laundry"));
+        arrayList.add(new Model(R.drawable.bg_pis,"Pis Laundry"));
+        arrayList.add(new Model(R.drawable.bg_koko,"Koko Laundry"));
+        arrayList.add(new Model(R.drawable.bg_l9,"L9 Laundry"));
+        arrayList.add(new Model(R.drawable.bg_rama,"Rama Laundry"));
+        arrayList.add(new Model(R.drawable.bg_nailah,"Nailah Laundry"));
+        arrayList.add(new Model(R.drawable.bg_luna,"Luna Laundry"));
+        arrayList.add(new Model(R.drawable.bg_desi,"Desi Laundry"));
+        arrayList.add(new Model(R.drawable.bg_lish,"Lish Laundry"));
+        arrayList.add(new Model(R.drawable.bg_artha,"Artha Mas Laundry"));
+        arrayList.add(new Model(R.drawable.bg_iis,"Iis Laundry"));
+        arrayList.add(new Model(R.drawable.bg_indah,"Indah Laundry"));
+        arrayList.add(new Model(R.drawable.bg_papa,"Laundry Papa Yoyon"));
+        arrayList.add(new Model(R.drawable.bg_nice,"D'nice Laundry"));
+        arrayList.add(new Model(R.drawable.bg_chacha,"Chacha Laundry"));
+        arrayList.add(new Model(R.drawable.bg_anugrah,"Anugrah Laundry"));
+        arrayList.add(new Model(R.drawable.bg_amin,"Amin Laundry"));
+        arrayList.add(new Model(R.drawable.bg_qloan,"Q-Loan Laundry"));
+        arrayList.add(new Model(R.drawable.bg_hartatik,"Hartatik Laundry"));
+        arrayList.add(new Model(R.drawable.bg_pratama,"Pratama Laundry"));
+        arrayList.add(new Model(R.drawable.bg_kilang,"Kilang Laundry"));
+        arrayList.add(new Model(R.drawable.bg_rizky,"Rizky Laundry"));
+        arrayList.add(new Model(R.drawable.bg_rytha,"Rytha Laundry"));
+        arrayList.add(new Model(R.drawable.bg_monggo,"Monggo Laundry"));
+        arrayList.add(new Model(R.drawable.bg_jumaiyah,"Jumaiyah Laundry"));
 
 
         ModelRecycleView modelRecycleView = new ModelRecycleView(this, arrayList);

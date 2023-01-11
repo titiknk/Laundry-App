@@ -218,7 +218,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
-        android:text="Laundrypandaan.com"
+        android:text="Laundrypasuruan.com"
         style="@style/TEXT"
         android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@+id/imageView4"
