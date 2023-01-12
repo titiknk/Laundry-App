@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Laundry App</string>
+    <string name="tv_judul">Washy Washy One Stop Professional Laundry Pandaan</string>
+    <string name="tv_deskripsi">Jasa Laundry adalah bantuan untuk mencuci pakaian kotor sampai kering dan siap untuk digunakan, seperti pada pakaian yang awalnya dibawa ke jasa laundry dalam keadaan kotor dan ketika dikembalikan kepada pelanggan pakaian tersebut layak untuk digunakan kembali dengan kondisi bersih, wangi, rapi dan sudah disetrika. Dimana penentuan tarifnya adalah tergantung pada jenis jasa laundry, jumlah kilogram dan jumlah satuan pakaian yang akan di laundry.</string>
+    <string name="tv_detail">Layanan Binatu. Cuci Setrika, Setrika, Cuci Basah, Cuci Kering</string>
+    <string name="tv_harga">Cuci Setrika - Rp. 6.000 / kg</string>
+    <string name="tv_harga2">Setrika - Rp. 3.000 / kg</string>
+    <string name="tv_harga3">Cuci Basah - Rp. 3.000 / kg</string>
+    <string name="tv_harga4">Cuci Kering - Rp. 4.000 / kg</string>
+    <string name="tv_hari">Senin - Sabtu</string>
+    <string name="tv_jam">Jam 08.00 - 16.00 WIB</string>
+    <string name="tv_tutup">Minggu Tutup</string>
+    <string name="tv_telp">+6285850220309</string>
+    <string name="tv_ig">Laundrypasuruan.com</string>
+    <string name="tv_gmail">laundrypasuruan@gmail.com</string>
 </resources>

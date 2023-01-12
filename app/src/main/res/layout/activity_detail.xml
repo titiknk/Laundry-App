@@ -23,7 +23,7 @@
         android:id="@+id/judulText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Washy Washy One Stop Professional Laundry Pandaan"
+        android:text="@string/tv_judul"
         android:textStyle="bold"
         style="@style/TEXT"
         android:textSize="14sp"
@@ -40,7 +40,7 @@
         android:layout_width="362dp"
         android:layout_height="116dp"
         style="@style/TEXT"
-        android:text="Jasa Laundry adalah bantuan untuk mencuci pakaian kotor sampai kering dan siap untuk digunakan, seperti pada pakaian yang awalnya dibawa ke jasa laundry dalam keadaan kotor dan ketika dikembalikan kepada pelanggan pakaian tersebut layak untuk digunakan kembali dengan kondisi bersih, wangi, rapi dan sudah disetrika. Dimana penentuan tarifnya adalah tergantung pada jenis jasa laundry, jumlah kilogram dan jumlah satuan pakaian yang akan di laundry."
+        android:text="@string/tv_deskripsi"
         android:textSize="12sp"
         android:justificationMode="inter_word"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -55,7 +55,7 @@
         android:layout_width="354dp"
         android:layout_height="28dp"
         android:layout_marginTop="8dp"
-        android:text="Layanan Binatu. Cuci Setrika, Setrika, Cuci Basah, Cuci Kering"
+        android:text="@string/tv_detail"
         android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -96,8 +96,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginTop="4dp"
-        android:text="Cuci Setrika - Rp. 6.000 / kg"
-        android:textSize="12sp"
+        android:text="@string/tv_harga"
+        android:textSize="11sp"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/detailText2" />
 
@@ -107,8 +107,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
-        android:text="Setrika - Rp. 3.000 / kg"
-        android:textSize="12sp"
+        android:text="@string/tv_harga2"
+        android:textSize="11sp"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/detailText3" />
 
@@ -118,8 +118,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
-        android:text="Cuci Basah - Rp. 3.000 / kg"
-        android:textSize="12sp"
+        android:text="@string/tv_harga3"
+        android:textSize="11sp"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/detailText4" />
 
@@ -129,8 +129,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
-        android:text="Cuci Kering - Rp. 4.000 / kg"
-        android:textSize="12sp"
+        android:text="@string/tv_harga4"
+        android:textSize="11sp"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/detailText5" />
 
@@ -139,7 +139,7 @@
         android:layout_width="28dp"
         android:layout_height="26dp"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="42dp"
+        android:layout_marginTop="40dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:srcCompat="@drawable/bg_jammm" />
@@ -150,9 +150,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="12dp"
-        android:text="Senin - Sabtu"
+        android:text="@string/tv_jam"
         style="@style/TEXT"
-        android:textSize="12sp"
+        android:textSize="11sp"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toBottomOf="@+id/detailText6" />
 
@@ -161,9 +161,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:text="Jam 08.00 - 16.00 WIB"
+        android:text="@string/tv_hari"
         style="@style/TEXT"
-        android:textSize="12sp"
+        android:textSize="11sp"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toBottomOf="@+id/detailText7" />
 
@@ -173,19 +173,19 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="4dp"
-        android:text="Minggu Tutup"
+        android:text="@string/tv_tutup"
         android:textStyle="bold"
         style="@style/TEXT"
-        android:textSize="12sp"
+        android:textSize="11sp"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toBottomOf="@+id/detailText8" />
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="30dp"
-        android:layout_height="29dp"
+        android:layout_width="26dp"
+        android:layout_height="25dp"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="26dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
         app:srcCompat="@drawable/wa" />
@@ -196,9 +196,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginTop="20dp"
-        android:text="+6285850220309"
+        android:text="@string/tv_telp"
         style="@style/TEXT"
-        android:textSize="12sp"
+        android:textSize="11sp"
         app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/detailText9" />
 
@@ -207,7 +207,7 @@
         android:layout_width="22dp"
         android:layout_height="24dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="26dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3"
         app:srcCompat="@drawable/bg_insta" />
@@ -218,9 +218,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
-        android:text="Laundrypasuruan.com"
+        android:text="@string/tv_ig"
         style="@style/TEXT"
-        android:textSize="12sp"
+        android:textSize="11sp"
         app:layout_constraintStart_toEndOf="@+id/imageView4"
         app:layout_constraintTop_toBottomOf="@+id/watext" />
 
@@ -233,5 +233,27 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/detailText2"
         app:srcCompat="@drawable/bg_price2" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="23dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:srcCompat="@drawable/bg_gmail" />
+
+    <TextView
+        android:id="@+id/gmailtext"
+        style="@style/TEXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/tv_gmail"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/igtext" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
