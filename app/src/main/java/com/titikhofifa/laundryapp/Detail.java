@@ -1,10 +1,14 @@
 package com.titikhofifa.laundryapp;
 
+import static java.time.LocalDateTime.now;
+
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -12,9 +16,14 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.OnBackPressedCallback;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.time.LocalDateTime;
+
+@RequiresApi(api = Build.VERSION_CODES.O)
 public class Detail extends AppCompatActivity {
+
 
     ImageView whatsappBTN, mapsBTN;
     ImageView img;
@@ -95,10 +104,7 @@ public class Detail extends AppCompatActivity {
 
     }
 
-    @Override
-    public boolean onSupportNavigateUp(){
-        finish();
-        return true;
-    }
+
+
 
 }

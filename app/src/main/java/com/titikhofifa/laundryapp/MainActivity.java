@@ -1,17 +1,28 @@
 package com.titikhofifa.laundryapp;
 
-import android.os.Bundle;
+import static java.time.LocalDateTime.now;
 
+import android.annotation.SuppressLint;
+import android.os.Build;
+import android.os.Bundle;
+import android.util.Log;
+
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 
+@RequiresApi(api = Build.VERSION_CODES.O)
 public class MainActivity extends AppCompatActivity {
 
-    RecyclerView recyclerView;
+    private LocalDateTime waktu = now();
+
     ModelRecycleView modelRecycleView;
+
+    RecyclerView recyclerView;
     ArrayList<Model> arrayList = new ArrayList<>();
 
     @Override
@@ -96,5 +107,39 @@ public class MainActivity extends AppCompatActivity {
         ModelRecycleView modelRecycleView = new ModelRecycleView(this, arrayList);
         recyclerView.setAdapter(modelRecycleView);
 
+    }
+
+    @Override
+    public void onStart(){
+        super.onStart();
+        Log.d("Main Activity onStart: ", String.valueOf(waktu));
+    }
+
+    @SuppressLint("LongLogTag")
+    @Override
+    protected void onResume() {
+        super.onResume();
+        waktu = now();
+        Log.d("Main Activity onResume: ", String.valueOf(waktu));
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        waktu = now();
+        Log.d("Main Activity onPause: ", String.valueOf(waktu));
+    }
+
+    @SuppressLint("LongLogTag")
+    @Override
+    public void onDestroy(){
+        super.onDestroy();
+        Log.d("Main Activity onDestroy: ", String.valueOf(waktu));
+    }
+
+    @Override
+    public void onStop(){
+        super.onStop();
+        Log.d("Main Activity onStop: ", String.valueOf(waktu));
     }
 }
