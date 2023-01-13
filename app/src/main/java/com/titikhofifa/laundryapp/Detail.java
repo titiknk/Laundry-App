@@ -2,6 +2,7 @@ package com.titikhofifa.laundryapp;
 
 import static java.time.LocalDateTime.now;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -23,6 +24,8 @@ import java.time.LocalDateTime;
 
 @RequiresApi(api = Build.VERSION_CODES.O)
 public class Detail extends AppCompatActivity {
+
+    private LocalDateTime waktu = now();
 
 
     ImageView whatsappBTN, mapsBTN;
@@ -104,7 +107,42 @@ public class Detail extends AppCompatActivity {
 
     }
 
+    @Override
+    public boolean onSupportNavigateUp(){
+        finish();
+        return true;
+    }
 
+    @Override
+    public void onStart(){
+        super.onStart();
+        Log.d("Detail onStart: ", String.valueOf(waktu));
+    }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        waktu = now();
+        Log.d("Detail onResume: ", String.valueOf(waktu));
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        waktu = now();
+        Log.d("Detail onPause: ", String.valueOf(waktu));
+    }
+
+    @Override
+    public void onDestroy(){
+        super.onDestroy();
+        Log.d("Detail onDestroy: ", String.valueOf(waktu));
+    }
+
+    @Override
+    public void onStop(){
+        super.onStop();
+        Log.d("Detail onStop: ", String.valueOf(waktu));
+    }
 
 }
