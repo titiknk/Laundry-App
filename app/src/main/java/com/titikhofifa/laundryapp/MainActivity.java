@@ -112,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onStart(){
         super.onStart();
-        Log.d("Main Activity onStart: ", String.valueOf(waktu));
+        Log.d("MainActivity onStart: ", String.valueOf(waktu));
     }
 
     @SuppressLint("LongLogTag")
@@ -120,26 +120,26 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         waktu = now();
-        Log.d("Main Activity onResume: ", String.valueOf(waktu));
+        Log.d("MainActivity onResume: ", String.valueOf(waktu));
     }
 
     @Override
     protected void onPause() {
         super.onPause();
         waktu = now();
-        Log.d("Main Activity onPause: ", String.valueOf(waktu));
+        Log.d("MainActivity onPause: ", String.valueOf(waktu));
     }
 
     @SuppressLint("LongLogTag")
     @Override
     public void onDestroy(){
         super.onDestroy();
-        Log.d("Main Activity onDestroy: ", String.valueOf(waktu));
+        Log.d("MainActivity onDestroy: ", String.valueOf(waktu));
     }
 
     @Override
     public void onStop(){
         super.onStop();
-        Log.d("Main Activity onStop: ", String.valueOf(waktu));
+        Log.d("MainActivity onStop: ", String.valueOf(waktu));
     }
 }

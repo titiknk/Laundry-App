@@ -113,36 +113,39 @@ public class Detail extends AppCompatActivity {
         return true;
     }
 
+    @SuppressLint("LongLogTag")
     @Override
     public void onStart(){
         super.onStart();
-        Log.d("Detail onStart: ", String.valueOf(waktu));
+        Log.d("DetailActivity onStart: ", String.valueOf(waktu));
     }
 
+    @SuppressLint("LongLogTag")
     @Override
     protected void onResume() {
         super.onResume();
         waktu = now();
-        Log.d("Detail onResume: ", String.valueOf(waktu));
+        Log.d("DetailActivit onResume: ", String.valueOf(waktu));
     }
 
     @Override
     protected void onPause() {
         super.onPause();
         waktu = now();
-        Log.d("Detail onPause: ", String.valueOf(waktu));
+        Log.d("DetailActivit onPause: ", String.valueOf(waktu));
     }
 
+    @SuppressLint("LongLogTag")
     @Override
     public void onDestroy(){
         super.onDestroy();
-        Log.d("Detail onDestroy: ", String.valueOf(waktu));
+        Log.d("DetailActivit onDestroy: ", String.valueOf(waktu));
     }
 
     @Override
     public void onStop(){
         super.onStop();
-        Log.d("Detail onStop: ", String.valueOf(waktu));
+        Log.d("DetailActivit onStop: ", String.valueOf(waktu));
     }
 
 }
