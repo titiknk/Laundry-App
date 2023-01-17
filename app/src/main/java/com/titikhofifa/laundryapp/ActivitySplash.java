@@ -11,6 +11,9 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.TextView;
 import android.window.SplashScreen;
 
 import java.time.LocalDateTime;
@@ -19,10 +22,18 @@ import java.time.LocalDateTime;
 public class ActivitySplash extends AppCompatActivity {
 
     private LocalDateTime waktu = now();
+
+    TextView Selamat;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+
+        Selamat = findViewById(R.id.Selamat);
+
+        Animation animation = AnimationUtils.loadAnimation(this, R.anim.simple_anim);
+
+        Selamat.setAnimation(animation);
 
         View decorView = getWindow().getDecorView();
         decorView.setSystemUiVisibility(decorView.SYSTEM_UI_FLAG_FULLSCREEN);

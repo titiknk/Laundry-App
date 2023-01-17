@@ -56,6 +56,7 @@
         android:layout_height="28dp"
         android:layout_marginTop="8dp"
         android:text="@string/tv_detail"
+        android:textColor="#474747"
         android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -169,14 +170,15 @@
 
     <TextView
         android:id="@+id/detailText9"
+        style="@style/TEXT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="4dp"
         android:text="@string/tv_tutup"
-        android:textStyle="bold"
-        style="@style/TEXT"
+        android:textColor="#FD1100"
         android:textSize="11sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toBottomOf="@+id/detailText8" />
 
@@ -185,7 +187,7 @@
         android:layout_width="26dp"
         android:layout_height="25dp"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="22dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
         app:srcCompat="@drawable/wa" />
@@ -195,7 +197,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="18dp"
         android:text="@string/tv_telp"
         style="@style/TEXT"
         android:textSize="11sp"
@@ -207,7 +209,7 @@
         android:layout_width="22dp"
         android:layout_height="24dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3"
         app:srcCompat="@drawable/bg_insta" />
@@ -217,7 +219,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="28dp"
         android:text="@string/tv_ig"
         style="@style/TEXT"
         android:textSize="11sp"
@@ -232,14 +234,14 @@
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/detailText2"
-        app:srcCompat="@drawable/bg_price2" />
+        app:srcCompat="@drawable/bg_hargaprice" />
 
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="23dp"
         android:layout_height="22dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4"
         app:srcCompat="@drawable/bg_gmail" />
@@ -250,7 +252,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="28dp"
         android:text="@string/tv_gmail"
         android:textSize="11sp"
         app:layout_constraintStart_toEndOf="@+id/imageView5"
