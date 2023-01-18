@@ -80,7 +80,9 @@ public class Detail extends AppCompatActivity {
             public void onClick(View view) {
                 toastWA.show();
 
-                String url = "https://api.whatsapp.com/send?phone=" + waText.getText().toString();
+                //String url = "https://api.whatsapp.com/send?phone=" + waText.getText().toString();
+
+                String url = "https://wa.me/" + waText.getText().toString() + "?text=Permisi,%20Apakah%20benar%20ini%20toko%20jasa%20Laundry?";
                 try {
                     PackageManager pm = getApplicationContext().getPackageManager();
                     pm.getPackageInfo("com.whatsapp", PackageManager.GET_ACTIVITIES);
