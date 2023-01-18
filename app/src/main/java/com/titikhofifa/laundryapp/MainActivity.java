@@ -3,11 +3,13 @@ package com.titikhofifa.laundryapp;
 import static java.time.LocalDateTime.now;
 
 import android.annotation.SuppressLint;
+import android.content.DialogInterface;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 
 import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -107,6 +109,27 @@ public class MainActivity extends AppCompatActivity {
         ModelRecycleView modelRecycleView = new ModelRecycleView(this, arrayList);
         recyclerView.setAdapter(modelRecycleView);
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(MainActivity.this);
+        alertDialog.setIcon(R.drawable.ic_baseline_exit_to_app_24);
+        alertDialog.setTitle("Keluar dari Aplikasi Laundry");
+        alertDialog.setMessage("Apakah kamu ingin keluar dari Aplikasi Laundry?");
+        alertDialog.setPositiveButton("Ya", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                finishAffinity();
+            }
+        });
+        alertDialog.setNegativeButton("Tidak", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+        alertDialog.show();
     }
 
     @Override
