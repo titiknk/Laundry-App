@@ -32,7 +32,7 @@
         android:layout_gravity="center"
         android:background="@drawable/search_view_bg"
         app:iconifiedByDefault="false"
-        app:queryHint="Cari tempat Laundry terdekat..." />
+        app:queryHint="Cari Laundry ..." />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycleview"
