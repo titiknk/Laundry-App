@@ -24,6 +24,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="381dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_view_bg"
+        app:iconifiedByDefault="false"
+        app:queryHint="Cari disini ..." />
+
+
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycleview"
         android:layout_width="match_parent"

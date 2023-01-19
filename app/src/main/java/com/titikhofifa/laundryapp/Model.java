@@ -1,5 +1,7 @@
 package com.titikhofifa.laundryapp;
 
+import java.util.ArrayList;
+
 public class Model {
 
     int image;
@@ -14,8 +16,9 @@ public class Model {
         this.detil = detil;
 
 
+    }
 
-
+    public Model() {
     }
 
     public int getImage() {
@@ -32,5 +35,9 @@ public class Model {
 
     public void setJudul(String judul) {
         this.judul = judul;
+    }
+
+    public void filterList (ArrayList<Model> filteredList){
+
     }
 }

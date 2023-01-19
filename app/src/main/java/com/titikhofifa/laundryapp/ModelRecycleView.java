@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Filter;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -15,22 +16,23 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class ModelRecycleView extends RecyclerView.Adapter<ModelRecycleView.ViewHolder> {
 
     Context context;
+
     ArrayList<Model> arrayList = new ArrayList<>();
+    ArrayList<Model> modelArrayList;
+    ArrayList<Model> modelArrayListList;
+
 
     public ModelRecycleView(Context context, ArrayList<Model> arrayList){
 
         this.context = context;
         this.arrayList = arrayList;
 
-
-
     }
-
-
 
     @NonNull
     @Override
@@ -38,8 +40,6 @@ public class ModelRecycleView extends RecyclerView.Adapter<ModelRecycleView.View
 
         View view = LayoutInflater.from(context).inflate(R.layout.card_view,parent,false);
         ViewHolder viewHolder = new ViewHolder(view);
-
-
 
         return viewHolder;
     }
@@ -66,6 +66,7 @@ public class ModelRecycleView extends RecyclerView.Adapter<ModelRecycleView.View
 
     }
 
+
     @Override
     public int getItemCount() {
         return arrayList.size();
@@ -77,16 +78,14 @@ public class ModelRecycleView extends RecyclerView.Adapter<ModelRecycleView.View
         TextView textView;
         CardView cardView;
 
-
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-
 
             imageView = itemView.findViewById(R.id.logoLondry);
             textView = itemView.findViewById(R.id.namaLondry);
             cardView = itemView.findViewById(R.id.cardView);
 
-
         }
     }
+
 }

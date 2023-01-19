@@ -11,26 +11,35 @@ import android.util.Log;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.List;
 
 @RequiresApi(api = Build.VERSION_CODES.O)
 public class MainActivity extends AppCompatActivity {
 
     private LocalDateTime waktu = now();
 
+    SearchView searchView;
+
     ModelRecycleView modelRecycleView;
+
+    List<Model> modelList;
 
     RecyclerView recyclerView;
     ArrayList<Model> arrayList = new ArrayList<>();
+    ArrayList<Model> searchList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        searchView = findViewById(R.id.searchView);
 
         recyclerView = findViewById(R.id.recycleview);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -106,10 +115,55 @@ public class MainActivity extends AppCompatActivity {
         arrayList.add(new Model(R.drawable.bg_jumaiyah,"Jumaiyah Laundry"));
 
 
-        ModelRecycleView modelRecycleView = new ModelRecycleView(this, arrayList);
+        modelList = new ArrayList<>();
+        ModelRecycleView modelRecycleView = new ModelRecycleView(MainActivity.this, arrayList);
         recyclerView.setAdapter(modelRecycleView);
 
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(MainActivity.this);
+        recyclerView.setLayoutManager(layoutManager);
+
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                searchList = new ArrayList<>();
+
+                if (query.length()>0){
+                    for (int i = 0; i <arrayList.size() ; i++) {
+                        if (arrayList.get(i).getJudul().toUpperCase().contains(query.toUpperCase())){
+
+                            Model model = new Model();
+                            model.setJudul(arrayList.get(i).getJudul());
+                            model.setImage(arrayList.get(i).getImage());
+                            searchList.add(model);
+                        }
+                    }
+                    ModelRecycleView modelRecycleView = new ModelRecycleView(MainActivity.this, searchList);
+                    recyclerView.setAdapter(modelRecycleView);
+
+                    RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(MainActivity.this);
+                    recyclerView.setLayoutManager(layoutManager);
+
+                }else {
+                    ModelRecycleView modelRecycleView = new ModelRecycleView(MainActivity.this, arrayList);
+                    recyclerView.setAdapter(modelRecycleView);
+
+                    RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(MainActivity.this);
+                    recyclerView.setLayoutManager(layoutManager);
+
+                }
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                return false;
+            }
+        });
+
+
     }
+
+
 
     @Override
     public void onBackPressed() {
