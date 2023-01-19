@@ -27,13 +27,12 @@
 
     <androidx.appcompat.widget.SearchView
         android:id="@+id/searchView"
-        android:layout_width="381dp"
+        android:layout_width="344dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:background="@drawable/search_view_bg"
         app:iconifiedByDefault="false"
-        app:queryHint="Cari disini ..." />
-
-
+        app:queryHint="Cari tempat Laundry terdekat..." />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycleview"
